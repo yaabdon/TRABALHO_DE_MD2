@@ -70,13 +70,13 @@ int main(){
     scanf("%d", &n1);
     printf("\n");
 
-    int inverso = inversoModular(G, Zn);
+    int inverso = inversoModular(G, Zn); //inversoModular = [6]
     int a = (H * inverso) % Zn;
 
     printf("Fazendo a multiplicação modular: %d * %d mod %d = %d\n", H, inverso, Zn, a);
     printf(" Sendo %d o inverso de %d.\n", inverso, G);
 
-    int resultado = powMod(a, x, n1);
+    int resultado = powMod(a, x, n1); //powMod = [7]
     printf("Valor final de congruência: %d\n", resultado);
 
     return 0;
