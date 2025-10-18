@@ -1,0 +1,26 @@
+ENTRADAS Q1:
+143 e 221
+323 e 712 -> q = 8 (não primo), mas 713 cria um q primo (7)
+8633 e 9563 
+527 e 901 -> falhou em 901 (nas sementes)
+561 e 1517 -> funcionou (para a minha semente, outro x0 poderia falhar)
+325 e 1981 -> falha em 25 
+
+ENTRADAS Q2:
+n = 2
+ciclos 4 e 6 -> sucesso 12
+n = 3
+ciclos 4, 6 e 8 -> sucesso 24
+n = 2
+ciclos 7, 11 -> falha 77
+n = 3
+ciclos 6, 10, 7 -> falha 210
+
+ENTRADAS Q3:
+0 -> erro
+106 -> erro
+1 -> não calcula fatores primos -> sucesso 1.00
+19 -> sucesso 10.00
+32 -> sucesso 10.50
+60 -> sucesso 14.00
+105 -> sucesso 24.00
