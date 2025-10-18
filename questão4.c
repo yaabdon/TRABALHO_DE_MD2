@@ -79,7 +79,32 @@ int main(){
     int resultado = powMod(a, x, n1); //powMod = [7]
     printf("Valor final de congruência: %d\n", resultado);
 
-    //resultado depois de preenchido H = 7, G = 3, Zn = 11, x = 10 e n1 = 13 -> 4
+/*
+
+INÍCIO DA SAÍDA DO CONSOLE:
+
+ALUNA: Yasmin Sousa Abdon, MATRÍCULA: 232014271
+Questão 4 -> resposta da 1 no código abaixo e resposta da 2 no README
+Insira H: 7
+Insira G: 3
+Insira Zn: 11
+Insira x: 10
+Insira n1: 13
+
+Algoritmo de Euclides: 3 mod 11 = 3
+Algoritmo de Euclides: 11 mod 3 = 2
+Algoritmo de Euclides: 3 mod 2 = 1
+Algoritmo de Euclides: 2 mod 1 = 0
+
+Substituindo, temos que o inverso de 3 em 11 é 4.
+
+Fazendo a multiplicação modular: 7 * 4 mod 11 = 6
+ Sendo 4 o inverso de 3.
+Valor final de congruência: 4
+
+FIM DA SAÍDA DO CONSOLE
+
+*/
 
     return 0;
 

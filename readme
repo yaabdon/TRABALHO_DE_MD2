@@ -7,18 +7,25 @@ YASMIN SOUSA ABDON - 232014271
 RESPOSTAS DA QUESTÃO 4 PARTE '2':
 
 
-(V) O algoritmo de Euclides estendido é utilizado para calcular o inverso modular de um número.
+1. (V) O algoritmo de Euclides estendido é utilizado para calcular o inverso modular de um número.
+Justificativa: a função inversoModular implementa o Algoritmo de Euclides Estendido. O estendido encontra os coeficientes x e y (x1 e x0 no código).
 
-(F) Se mdc(G, Zn) ≠ 1, o programa ainda consegue encontrar o inverso de G em Zn.
+2. (F) Se mdc(G, Zn) ≠ 1, o programa ainda consegue encontrar o inverso de G em Zn.
+Justificativa: uma das condições para que exista o inverso modular é que G e Zn sejam primos entre si, se o mdc é diferente de 1 (maior que), tal condição não é atendida.
 
-(V) A operação (H * inverso) % Zn representa a divisão modular de H por G.
+3. (V) A operação (H * inverso) % Zn representa a divisão modular de H por G.
+Justificativa: a divisão é calculada pela multiplicação pelo inverso modular. H/G (mod Zn) é equivalente a H(G^-1)mod Zn = (H * inverso) % Zn
 
-(V) Se n1 for primo, o código aplica o Pequeno Teorema de Fermat para simplificar o cálculo de
+4. (V) Se n1 for primo, o código aplica o Pequeno Teorema de Fermat para simplificar o cálculo de
 a^x mod n1.
+Justificativa: Conforme o enunciado, se n1 é primo, aplica-se o Pequeno Teorema de Fermat, que é o caso especial do Teorema de Euler para módulos primos.
 
-(F) A função powMod implementa o cálculo de potência modular utilizando multiplicações diretas
+5. (F) A função powMod implementa o cálculo de potência modular utilizando multiplicações diretas
 sem otimização.
+Justificativa: A função é otimizada por Exponenciação por Quadratura/Binária -> o cálculo é feito em O(log x).
 
-(V) Quando o resultado do inverso é negativo, o código ajusta o valor somando o módulo m0.
+6. (V) Quando o resultado do inverso é negativo, o código ajusta o valor somando o módulo m0.
+Justificativa: A linha if(x1 < 0) x1 += m0; no inversoModular faz esse ajuste. Ela converte o inverso negativo encontrado pelo algoritmo para o seu equivalente positivo (menor resíduo positivo) no módulo m0.
 
-(V) O cálculo de fi(n1) (função totiente de Euler) é utilizado apenas quando n1 não é primo.
+7. (V) O cálculo de fi(n1) (função totiente de Euler) é utilizado apenas quando n1 não é primo.
+Justificativa: Seguindo a premissa do enunciado: para n1 primo, usa-se Fermat (n1-1); para n1 não primo, usa-se a regra geral de Euler, que exige o cálculo de fi(n1).
